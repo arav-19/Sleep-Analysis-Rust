@@ -1,4 +1,4 @@
-use petgraph::graph::{Graph, NodeIndex};
+use petgraph::graph::Graph;
 use crate::data::StudentSleepData;
 
 pub fn build_graph(data: &[StudentSleepData]) -> Graph<String, f64> {

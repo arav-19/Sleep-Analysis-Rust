@@ -2,9 +2,9 @@ use crate::data::StudentSleepData;
 use rand::seq::SliceRandom;
 
 #[derive(Debug, Clone)]
-struct Cluster {
-    centroid: Vec<f64>,
-    points: Vec<usize>,
+pub struct Cluster {  
+    pub centroid: Vec<f64>,
+    pub points: Vec<usize>,
 }
 
 pub fn k_means_clustering(data: &[StudentSleepData], k: usize, iterations: usize) -> Vec<Cluster> {
